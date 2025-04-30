@@ -1,16 +1,18 @@
-import { BrowserRouter } from 'react-router-dom';
-import { AppRoutes } from './routes';
-import { AppThemeProvider } from './shared/contexts/themecontext';
-
+import { BrowserRouter } from "react-router-dom";
+import { AppRoutes } from "./routes";
+import { AppThemeProvider } from "./shared/contexts/ThemeContext";
+import { MenuLateral } from "./shared/components";
 
 function App() {
-  return (
-  <AppThemeProvider>
-    <BrowserRouter>
-    <AppRoutes/>
-    </BrowserRouter>
-    </AppThemeProvider>
-  );
+	return (
+		<AppThemeProvider>
+			<BrowserRouter>
+				<MenuLateral>
+					<AppRoutes />
+				</MenuLateral>
+			</BrowserRouter>
+		</AppThemeProvider>
+	);
 }
 
-export default App
+export default App;
