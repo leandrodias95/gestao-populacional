@@ -1,6 +1,6 @@
 import { Box, Button, Icon, Paper, TextField, useTheme } from "@mui/material"
 
-interface IFerramentasDalistagemProps{
+interface IFerramentasDaListagemProps{
     textoDaBusca?: string; 
     mostrarInputBusca?: boolean;
     aoMudarTextDeBusca?: (novoTexto: string) => void;
@@ -8,7 +8,7 @@ interface IFerramentasDalistagemProps{
     mostrarBotaoNovo?: boolean;
     aoClicarEmNovo?: () => void;
 }
-export const FerramentasDalistagem: React.FC <IFerramentasDalistagemProps>= ({
+export const FerramentasDalistagem: React.FC <IFerramentasDaListagemProps>= ({
    textoDaBusca = '',
    mostrarInputBusca = false,
     aoMudarTextDeBusca,

@@ -1,14 +1,17 @@
-import { FerramentasDalistagem, FerramentasDeDetalhe } from "../../shared/components";
-import { LayoutBaseDePagina } from "../../shared/layouts";
+import { FerramentasDeDetalhe } from '../../shared/components';
+import { LayoutBaseDePagina } from '../../shared/layouts';
 
-export const Dashboard = () =>{
-    return(
-        <LayoutBaseDePagina titulo='Página Inicial'
-         barraDeFerramentas={(
-            <FerramentasDeDetalhe />
-         )} >
-            Testando
-        </LayoutBaseDePagina>
 
-    );
+export const Dashboard = () => {
+
+  return (
+    <LayoutBaseDePagina
+      titulo='Página inicial'
+      barraDeFerramentas={(
+        <FerramentasDeDetalhe mostrarBotaoSalvarEFechar mostrarBotaoNovo mostrarBotaoSalvarEFecharCarregando mostrarBotaoVoltar = {false} />
+      )}
+    >
+      Testando
+    </LayoutBaseDePagina>
+  );
 };
