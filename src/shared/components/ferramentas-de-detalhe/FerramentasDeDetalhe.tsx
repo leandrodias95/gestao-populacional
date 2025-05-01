@@ -29,7 +29,7 @@ export const FerramentasDeDetalhe: React.FC<IFerramentasDeDetalheProps> = ({
   mostrarBotaoVoltar = true,
   mostrarBotaoApagar = true,
   mostrarBotaoSalvar = true,
-  mostrarBotaoSalvarEFechar = false,
+  mostrarBotaoSalvarEFechar: mostrarBotaoSalvarEFechar = false,
 
   mostrarBotaoNovoCarregando = false,
   mostrarBotaoVoltarCarregando = false,
@@ -85,7 +85,7 @@ export const FerramentasDeDetalhe: React.FC<IFerramentasDeDetalheProps> = ({
           startIcon={<Icon>save</Icon>}
         >
            <Typography variant='button' whiteSpace='nowrap' textOverflow='ellipsis' overflow='hidden'>
-          Salvar e voltar
+          Salvar e fechar
           </Typography>
           </Button>
       )}
